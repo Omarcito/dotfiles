@@ -1,1 +1,35 @@
-/Users/Omarcito/.gitconfig
+[user]
+	name = Omarcito
+	email = Omar@omardearmas.com
+[core]
+	excludesfile = ~/.gitignore
+  quotepath = false
+	editor = subl -n -w
+[credential]
+	helper = osxkeychain
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+
+[mergetool]
+  keepBackup = false
+
+[merge]
+  tool = opendiff
+[diff]
+  external = opendiff
+[push]
+	default = simple
