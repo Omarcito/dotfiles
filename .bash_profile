@@ -70,6 +70,9 @@ alias iadir='cd ~/code/indestructibleart.com'
 
 alias weatherdir='cd ~/code/WeatherApp'
 
+# Minecraft
+alias minecraft='cd ~/Applications/Minecraft Server && java -Xmx1024M -Xms1024M -jar minecraft_server.1.6.4.jar'
+
 # .bash_profile is executed for login shells, while .bashrc is executed for
 # interactive non-login shells.
 # http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
