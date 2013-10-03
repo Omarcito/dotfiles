@@ -24,25 +24,11 @@ alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias flush="dscacheutil -flushcache" # Flush DNS cache
 
-# List dir contents aliases
-# ref: http://ss64.com/osx/ls.html
-# Long form no user group, color
-alias l="ls -oG"
-# Order by last modified, long form no user group, color
-alias lt="ls -toG"
-# List all except . and ..., color, mark file types, long form no user group, file size
-alias la="ls -AGFoh"
-# List all except . and ..., color, mark file types, long form no use group, order by last modified, file size
-alias lat="ls -AGFoth"
-
 # Concatenate and print content of files (add line numbers)
 alias catn="cat -n"
 
 # Copy my public key to the pasteboard
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to pasteboard.\n'"
-
-# Flush DNS cache
-alias flushdns="dscacheutil -flushcache"
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
@@ -70,8 +56,10 @@ alias iadir='cd ~/code/indestructibleart.com'
 
 alias weatherdir='cd ~/code/WeatherApp'
 
+alias dotfiles='cd ~/code/dotfiles'
+
 # Minecraft
-alias minecraft='cd ~/Applications/Minecraft\ Server/ && java -Xmx1024M -Xms1024M -jar minecraft_server.1.6.4.jar'
+alias minecraft="cd ~/Applications/Minecraft\ Server/ && java -Xmx1024M -Xms1024M -jar minecraft_server.1.6.4.jar"
 
 # .bash_profile is executed for login shells, while .bashrc is executed for
 # interactive non-login shells.

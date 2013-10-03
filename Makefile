@@ -1,9 +1,8 @@
 TARGET = ~/
 cur-dir := $(shell pwd)/
 
-install: ../.gitignore ../.gitconfig ../.bashrc ../.bash_profile ../.inputrc
+install: ../.gitignore ../.gitconfig ../.bashrc ../.bash_profile
 	source ~/.bash_profile
-	bash
 
 ../.gitignore:
 	ln -s $(join $(cur-dir), .gitignore) $(join $(TARGET), .gitignore)
