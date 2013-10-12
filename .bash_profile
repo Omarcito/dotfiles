@@ -42,9 +42,9 @@ alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool fals
 alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
-alias mysql=$MYSQL_HOME/bin/mysql
+alias mysql='$MYSQL_HOME/bin/mysql'
 
-alias mysqladmin=$MYSQL_HOME/bin/mysqladmin
+alias mysqladmin='$MYSQL_HOME/bin/mysqladmin'
 
 alias start_mysql='sudo $MYSQL_HOME/bin/mysqld_safe'
 
@@ -58,6 +58,10 @@ alias weatherdir='cd ~/code/WeatherApp'
 
 alias dotfiles='cd ~/code/dotfiles'
 
+#git
+alias st='git status'
+alias addall='git add -A'
+
 # Minecraft
 alias minecraft="cd ~/Applications/Minecraft\ Server/ && java -Xmx1024M -Xms1024M -jar minecraft_server.1.6.4.jar"
 
@@ -69,4 +73,4 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
-[[ -s /Users/Omarcito/.nvm/nvm.sh ]] && . /Users/Omarcito/.nvm/nvm.sh # This loads NVM
+[[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh # This loads NVM
