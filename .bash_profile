@@ -1,6 +1,7 @@
 export PATH=/usr/local/bin:/opt/local/bin:opt/local/sbin:$PATH
-
 export MYSQL_HOME=/usr/local/mysql
+
+
 # Allow aliases to be with sudo
 alias sudo="sudo "
 
@@ -11,9 +12,10 @@ alias ~="cd ~"
 alias -- -="cd -"
 
 alias ls="ls -G" # list
-alias la="ls -Ga" # list all, includes dot files
+alias la='ls -lAhGp' 
 alias ll="ls -Gl" # long list, excludes dot files
 alias lla="ls -Gla" # long list all, includes dot files
+
 
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="sudo osascript -e 'set volume 10'"
@@ -43,19 +45,14 @@ alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true &&
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
 alias mysql='$MYSQL_HOME/bin/mysql'
-
 alias mysqladmin='$MYSQL_HOME/bin/mysqladmin'
-
 alias start_mysql='sudo $MYSQL_HOME/bin/mysqld_safe'
-
 alias stop_mysql='sudo $MYSQL_HOME/bin/mysqladmin shutdown'
-
 alias simpleserver='python -m SimpleHTTPServer 8000'
 
+#Directories
 alias iadir='cd ~/code/indestructibleart.com'
-
 alias weatherdir='cd ~/code/WeatherApp'
-
 alias dotfiles='cd ~/code/dotfiles'
 
 #git
@@ -64,8 +61,8 @@ alias aa='git add -A'
 alias co="git checkout"
 alias gb="git branch"
 alias gs="git status"
-alias p="git push origin"
-alias m="git commit -m"
+alias gp="git push origin"
+alias gc="git commit"
 
 # Minecraft
 alias minecraft="cd ~/Applications/Minecraft\ Server/ && java -Xmx1024M -Xms1024M -jar minecraft_server.1.6.4.jar"
@@ -79,3 +76,5 @@ if [ -f ~/.bashrc ]; then
 fi
 
 [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh # This loads NVM
+
+source ~/.bash_aliases
