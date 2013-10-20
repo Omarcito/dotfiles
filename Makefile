@@ -1,7 +1,7 @@
 TARGET = ~/
 cur-dir := $(shell pwd)/
 
-install: ../.gitignore ../.gitconfig ../.bashrc ../.bash_profile
+install: ../.gitignore ../.gitconfig ../.bashrc ../.bash_profile ../.bash_aliases
 	source ~/.bash_profile
 
 ../.gitignore:
@@ -19,11 +19,15 @@ install: ../.gitignore ../.gitconfig ../.bashrc ../.bash_profile
 ../.inputrc:
 	ln -s $(join $(cur-dir), .inputrc) $(join $(TARGET), .inputrc)
 
+../.bash_aliases:
+	ln -s $(join $(cur-dir), .bash_aliases) $(join $(TARGET), .bash_aliases)
+
 clean:
 	rm $(join $(TARGET), .gitignore)
 	rm $(join $(TARGET), .gitconfig)
 	rm $(join $(TARGET), .bashrc)
 	rm $(join $(TARGET), .bash_profile)
 	rm $(join $(TARGET), .inputrc)
+	rm $(join $(TARGET), .bash_aliases)
 
 .PHONY: install clean
