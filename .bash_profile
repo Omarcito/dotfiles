@@ -59,8 +59,13 @@ alias weatherdir='cd ~/code/WeatherApp'
 alias dotfiles='cd ~/code/dotfiles'
 
 #git
-alias st='git status'
-alias addall='git add -A'
+alias gs='git status'
+alias aa='git add -A'
+alias co="git checkout"
+alias gb="git branch"
+alias gs="git status"
+alias p="git push origin"
+alias m="git commit -m"
 
 # Minecraft
 alias minecraft="cd ~/Applications/Minecraft\ Server/ && java -Xmx1024M -Xms1024M -jar minecraft_server.1.6.4.jar"
