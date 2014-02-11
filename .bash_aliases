@@ -62,6 +62,10 @@ alias gb="git branch"
 alias gs="git status"
 alias gp="git push origin"
 alias gc="git commit"
+
+#ghwd
+alias g=ghwd
+
 #Lazy Git Commits
 function m(){
   git add . -A
