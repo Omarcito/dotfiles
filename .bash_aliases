@@ -53,6 +53,7 @@ alias simpleserver='python -m SimpleHTTPServer 8000'
 alias iadir='cd ~/code/indestructibleart.com'
 alias weatherdir='cd ~/code/WeatherApp'
 alias dotfiles='cd ~/code/dotfiles'
+alias personal='cd ~/code/PersonalSite'
 
 #git
 alias gs='git status'
