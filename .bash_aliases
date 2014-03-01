@@ -10,7 +10,7 @@ alias -- -="cd -"
 
 #List Items
 alias ls="ls -G" # list
-alias la='ls -lAhGp' 
+alias la='ls -lAhGp'
 alias ll="ls -Gl" # long list, excludes dot files
 alias lla="ls -Gla" # long list all, includes dot files
 
@@ -54,6 +54,7 @@ alias iadir='cd ~/code/indestructibleart.com'
 alias weatherdir='cd ~/code/WeatherApp'
 alias dotfiles='cd ~/code/dotfiles'
 alias personal='cd ~/code/PersonalSite'
+alias jsla='cd ~/code/js.la'
 
 #git
 alias gs='git status'
