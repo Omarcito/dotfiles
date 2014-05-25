@@ -55,6 +55,7 @@ alias weatherdir='cd ~/code/WeatherApp'
 alias dotfiles='cd ~/code/dotfiles'
 alias personal='cd ~/code/PersonalSite'
 alias jsla='cd ~/code/js.la'
+alias iawh='cd ~/code/indestructibleart'
 
 #git
 alias gs='git status'
