@@ -54,7 +54,6 @@ alias iadir='cd ~/code/indestructibleart.com'
 alias dotfiles='cd ~/code/dotfiles'
 alias personal='cd ~/code/PersonalSite'
 alias jsla='cd ~/code/js.la'
-alias iawh='cd ~/code/indestructibleart'
 alias iawp='cd ~/code/local.ia-wp.com'
 
 #git
