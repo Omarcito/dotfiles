@@ -51,11 +51,11 @@ alias simpleserver='python -m SimpleHTTPServer 8000'
 
 #Directories
 alias iadir='cd ~/code/indestructibleart.com'
-alias weatherdir='cd ~/code/WeatherApp'
 alias dotfiles='cd ~/code/dotfiles'
 alias personal='cd ~/code/PersonalSite'
 alias jsla='cd ~/code/js.la'
 alias iawh='cd ~/code/indestructibleart'
+alias iawp='cd ~/code/local.ia-wp.com'
 
 #git
 alias gs='git status'
